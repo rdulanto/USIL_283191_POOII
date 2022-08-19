@@ -1,0 +1,92 @@
+class Main {
+  public static void main(String[] args) {
+
+    int edad;
+    edad = 38;
+
+    // Esto es un comentario
+    // declarando variables
+    double precio = 15;
+    float pi;
+
+    /*
+    Comentarios
+    de mas de una
+    linea
+    */
+    char letra = 'p';
+
+    boolean evalua = false;
+
+    String nombreCompleto = "Ricardo Dulanto";
+    
+    System.out.println(nombreCompleto + " " + edad);
+
+System.out.println(edad + ""+ edad);
+
+
+    //Operadores
+    int numero1;
+    int numero2;
+    double resultado;
+
+    numero1 = 200;
+    numero2 = 400;
+
+    resultado = numero1 + numero2;
+    System.out.println("La suma de los numeros: " + resultado);
+
+    /*
+    Operadores:
+      Resta
+      Multiplicacion
+      Division
+      Modulo
+    */
+
+    resultado = numero1 - numero2;
+    System.out.println("La resta de los numeros: " + resultado);
+
+        resultado = numero1 * numero2;
+    System.out.println("La multiplicación de los numeros: " + resultado);
+
+//Java Casting
+        resultado = (double)numero1 / (double)numero2;
+    System.out.println("La división de los numeros: " + resultado);
+
+        resultado = numero1 % numero2;
+    System.out.println("El modulo de los numeros: " + resultado);
+  
+
+  // incrementos o decrementos
+  //incrementar en 100 unidades al numero1
+  numero1 = numero1 + 100;
+  numero1 += 100;
+
+  System.out.println("Resultado del incremento: " + numero1);
+
+boolean res;
+    res = numero1 == numero2;
+    
+    //Comparaciones
+    System.out.println("¿Numero1 es igual a Numero2"+ res);
+
+    /*
+      Comparaciones:
+        Iguales ==
+        Diferentes !=
+        Mayor Igual >=
+        Menor igual <=
+    */
+
+    res = (numero1 == 200) && (numero2 == 400);
+        System.out.println("Condición "+ !res);
+
+    /*
+      &&
+      ||
+      !
+    */
+    
+  }
+}
