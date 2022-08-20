@@ -1,0 +1,44 @@
+/*
+Ejercicio 4 
+La  repartición  de  ganancias  en  una  empresa  se  hace  en  forma  proporcional  al  número  de 
+acciones de cada uno de sus tres socios. Dada la ganancia de un año y la cantidad de acciones 
+de cada socio, realice un algoritmo y represéntelo mediante un pseudocódigo que determine el 
+monto de la ganancia que le corresponde a cada socio. 
+*/
+
+//import java.util.System;
+
+class Main {
+  public static void main(String[] args) {
+
+int socio1, socio2, socio3;
+double acciones, accS1, accS2, accS3, gananciaT, ganSoc1, ganSoc2, ganSoc3;    
+    System.out.println("Ingrese la acción del socio 1: ");
+    socio1 = Integer.parseInt(System.console().readLine());
+
+    System.out.println("Ingrese la acción del socio 2: ");
+    socio2 = Integer.parseInt(System.console().readLine());
+
+System.out.println("Ingrese la acción del socio 3: ");
+    socio3 = Integer.parseInt(System.console().readLine());
+
+    acciones = socio1 + socio2 + socio3;
+
+    accS1 = socio1 / acciones;
+    accS2 = socio2 / acciones;
+    accS3 = socio3 / acciones;
+
+  System.out.println("Ingrese la ganancia del año: ");
+    gananciaT = Double.parseDouble(System.console().readLine());
+
+    ganSoc1 = accS1 * gananciaT;
+    ganSoc2 = accS2 * gananciaT;
+    ganSoc3 = accS3 * gananciaT;
+
+    System.out.println("La ganacia del Socio 1 es: " + Math.round(ganSoc1));
+
+    System.out.println("La ganacia del Socio 2 es: " + Math.round(ganSoc2));
+
+    System.out.println("La ganacia del Socio 3 es: " + Math.round(ganSoc3));
+  }
+}
