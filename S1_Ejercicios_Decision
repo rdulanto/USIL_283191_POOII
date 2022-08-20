@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+
+
+    Scanner sc = new Scanner(System.in);
+
+
+    System.out.println("Ingrese su edad: ");
+    int edad = Integer.parseInt(sc.nextLine());
+    String NEdad;
+
+    if(edad <= 18) {
+      NEdad = "Menor de edad";
+      
+    } else if(edad == 25){
+      NEdad = "Tienes 25 años";
+    } else{
+      NEdad = "Mayor de edad";
+    }
+
+    System.out.println(NEdad);
+
+
+    
+  }
+}
