@@ -1,0 +1,28 @@
+class Main {
+  public static void main(String[] args) {
+
+  int lado = 4;
+
+    //objeto de la clase Cuadrado
+  Cuadrado c = new Cuadrado(lado);
+    
+    System.out.println("El area del cuadrado es: " + c.calculaArea());
+  }
+}
+
+class Cuadrado{
+
+  int lado;
+
+  //metodo constructor
+  public Cuadrado(int lado){
+
+    this.lado = lado;
+  }
+
+  int calculaArea(){
+    int resultado = lado * lado;
+    return resultado;
+  }
+  
+}
