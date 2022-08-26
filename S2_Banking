@@ -1,0 +1,55 @@
+class Main {
+  public static void main(String[] args) {
+
+    Cuenta c = new Cuenta(426358,"Ricardo",1000);
+    c.estadoCuenta();
+
+    c.deposito(200);
+    c.estadoCuenta();
+
+    c.retiro(500); 
+    c.estadoCuenta();
+    
+  }
+}
+
+/*
+  Esta clase permite demostrar las transacciones bancarias de deposito y retiro de dinero en una cuenta
+*/
+class Cuenta{
+
+  int nroCuenta;
+  String nombreCliente;
+  float monto;
+
+  //metodo constructor
+  public Cuenta(int n, String nomb, float mont){
+
+  this.nroCuenta = n;
+  this.nombreCliente = nomb;
+  this.monto = mont;
+    
+  }
+
+  //metodo deposito
+  void deposito(float monto_reci){
+    this.monto += monto_reci;
+    System.out.println("Se deposito: " + monto_reci + " en tu cuenta");
+  }
+
+  //metodo retiro
+  void retiro(float monto_retiro){
+    if(this.monto< monto_retiro) {
+      System.out.println("Saldo insuficiente");
+    } else {
+      this.monto -= monto_retiro;
+      System.out.println("Se retiro " + monto_retiro + " de su cuenta");
+    }
+  }
+
+  //metodo de estado de cuenta
+  void estadoCuenta(){
+    System.out.println("Hola " + this.nombreCliente + " tienes " + this.monto + " en tu cuenta " + this.nroCuenta);
+  
+  }
+}
