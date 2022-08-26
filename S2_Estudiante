@@ -1,0 +1,54 @@
+class Main {
+  public static void main(String[] args) {
+/*
+    Estudiante est = new Estudiante();
+
+    est.codigo = 101;
+    est.nombre = "Ricardo";
+    est.genero = "masculino";
+    est.edad = 38;
+
+    est.muestraDatos();
+
+    Estudiante est1 = new Estudiante();
+
+    est1.registraDatos(102,"Andres","masculino",20);
+
+    est1.muestraDatos();
+    */
+
+  Estudiante est2 = new Estudiante(103,"Paola","femenino",30);
+
+    est2.muestraDatos();
+    
+  }
+}
+
+class Estudiante{
+
+  int codigo;
+  String nombre;
+  String genero;
+  int edad;
+//metodo Constructor
+  public Estudiante(int codigo, String nombre, String genero, int edad){
+
+    this.codigo = codigo;
+    this.nombre = nombre;
+    this.genero = genero;
+    this.edad = edad;
+        
+  }
+  
+  //comportamientos
+  void registraDatos(int codigo1, String nombre1, String genero1, int edad1){
+    codigo = codigo1;
+    nombre = nombre1;
+    genero = genero1;
+    edad = edad1;
+  }
+
+  void muestraDatos(){
+    System.out.println("El alumno con codigo " + codigo + ", llamdo " + nombre + " de genero " + genero + " tiene " + edad + " años.");
+  }
+}
