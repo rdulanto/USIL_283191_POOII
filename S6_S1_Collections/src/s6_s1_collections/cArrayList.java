@@ -39,6 +39,38 @@ public class cArrayList {
         }
         */
         
+        for(int i=0; i<frutas.size();i++){
+            System.out.println("La fruta ahora es: " + frutas.get(i));
+        }
+        
+        
+        int mFruta = frutas.size()-1;
+                //System.out.println(mFruta);
+        for(int i=mFruta; i>=0;i--){
+            System.out.println("La fruta ahora es: " + frutas.get(i));
+        }
+        
+        
+        //utilizando la clase Alumnos
+        
+        Alumno al1 = new Alumno(1001, "Carlos", 22);
+        Alumno al2 = new Alumno(1002, "Roxana", 23);
+        Alumno al3 = new Alumno(1003, "Leyla", 21);
+        Alumno al4 = new Alumno(1004, "Jose", 20);
+        
+        ArrayList<Alumno> arrAlum = new ArrayList<Alumno>();
+        arrAlum.add(al1);
+        arrAlum.add(al2);
+        arrAlum.add(al3);
+        arrAlum.add(al4);
+        
+        Iterator itr = arrAlum.iterator();
+        
+        while(itr.hasNext()){
+            Alumno al = (Alumno)itr.next();
+            System.out.println("El alumno " + al.nombre + " con codigo " + 
+                    al.codigo + " tiene " + al.edad + " años.");
+        }
         
     }
     
